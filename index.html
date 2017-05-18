@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <form>
+        <p>Enter email:</p>
+        <input type="email" name="email" id="emailInput">
+        <p>Enter Your Display name:</p>
+        <input type="name" name="displayName" id="displayNameInput">
+        <p>Enter a password:</p>
+        <input type="password" name="password" id="passowrdInput">
+        <button id="submitReg">Submit</button>
+    </form>
+    <form>
+        <p>Login</p>
+        <input type="loginEmail" name="loginEmail" id="loginEmail">
+        <p>Password</p>
+        <input type="Password" name="loginPassword" id="loginPassword">
+        <button id="login">Login</button>
+    </form>
+    <div id="chatBox">
+        <form>
+            <p>Chat:</p>
+            <input type="chat" name="chat" id="chatMessage">
+            <button id="chatSubmit">Send message</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBFhMS91gRwNwkhldopm61MNZU18-VkNgs",
+        authDomain: "myfirsttestapp-22516.firebaseapp.com",
+        databaseURL: "https://myfirsttestapp-22516.firebaseio.com",
+        projectId: "myfirsttestapp-22516",
+        storageBucket: "myfirsttestapp-22516.appspot.com",
+        messagingSenderId: "861785037903"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
